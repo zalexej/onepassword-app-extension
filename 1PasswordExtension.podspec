@@ -1,7 +1,6 @@
 Pod::Spec.new do |spec|
 
   spec.name             = "1PasswordExtension"
-  spec.module_name      = "OnePasswordExtension"
   spec.version          = "1.8.4"
   spec.summary          = "With just a few lines of code, your app can add 1Password support."
   spec.description      = <<-DESC
@@ -25,6 +24,6 @@ Pod::Spec.new do |spec|
   spec.frameworks       = [ 'Foundation', 'MobileCoreServices', 'UIKit' ]
   spec.weak_framework   = "WebKit"
   spec.exclude_files    = "Demos"
-  spec.resource_bundles = { 'OnePasswordExtension' => ['1Password.xcassets/*.imageset/*.png', '1Password.xcassets'] }
+  spec.resource_bundles = { ['1Password.xcassets/*.imageset/*.png', '1Password.xcassets'] }
   spec.requires_arc     = true
 end
