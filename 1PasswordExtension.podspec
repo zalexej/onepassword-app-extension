@@ -25,6 +25,6 @@ Pod::Spec.new do |spec|
   spec.frameworks       = [ 'Foundation', 'MobileCoreServices', 'UIKit' ]
   spec.weak_framework   = "WebKit"
   spec.exclude_files    = "Demos"
-  spec.resource_bundles = { 'OnePasswordExtensionResources' => ['1Password.xcassets/*.imageset/*.png', '1Password.xcassets'] }
+  spec.resource_bundles = { 'OnePasswordExtension' => ['1Password.xcassets/*.imageset/*.png', '1Password.xcassets'] }
   spec.requires_arc     = true
 end
